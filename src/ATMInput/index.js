@@ -31,69 +31,17 @@ const ATMInput = ({
             )}
           </Form.Group>
           <Form.Group className="mb-3" controlId="formKeyboard">
-            <Button
-              className="keyboard-button"
-              variant="primary"
-              onClick={onButtonPressed}
-            >
-              1
-            </Button>
-            <Button
-              className="keyboard-button"
-              variant="primary"
-              onClick={onButtonPressed}
-            >
-              2
-            </Button>
-            <Button
-              className="keyboard-button"
-              variant="primary"
-              onClick={onButtonPressed}
-            >
-              3
-            </Button>
-            <Button
-              className="keyboard-button"
-              variant="primary"
-              onClick={onButtonPressed}
-            >
-              4
-            </Button>
-            <Button
-              className="keyboard-button"
-              variant="primary"
-              onClick={onButtonPressed}
-            >
-              5
-            </Button>
-            <Button
-              className="keyboard-button"
-              variant="primary"
-              onClick={onButtonPressed}
-            >
-              6
-            </Button>
-            <Button
-              className="keyboard-button"
-              variant="primary"
-              onClick={onButtonPressed}
-            >
-              7
-            </Button>
-            <Button
-              className="keyboard-button"
-              variant="primary"
-              onClick={onButtonPressed}
-            >
-              8
-            </Button>
-            <Button
-              className="keyboard-button"
-              variant="primary"
-              onClick={onButtonPressed}
-            >
-              9
-            </Button>
+            {new Array(9).fill(0).map((item, index) => {
+              return (
+                <Button
+                  className="keyboard-button"
+                  variant="primary"
+                  onClick={onButtonPressed}
+                >
+                  {index + 1}
+                </Button>
+              );
+            })}
 
             <Button
               className="keyboard-button"
