@@ -1,0 +1,35 @@
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+.alert {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+.card {
+  margin: 10px;
+  text-align: center;
+}
+
+.card i {
+  font-size: 11px;
+}
+
+.keyboard-button {
+  margin: 5px;
+  width: 30%;
+  height: 100px;
+}
+
+.alert button {
+  margin-top: 10px;
+}
